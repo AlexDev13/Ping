@@ -1,0 +1,31 @@
+{
+  "name": "ProjectES2015",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start":"node ./src/index.js",
+    "build": "babel src -d build --presets es2015",
+    "watch": "babel src -d build --presets es2015 -w",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "ip": "^1.1.5",
+    "net-ping": "^1.2.3",
+    "should": "^13.2.3",
+    "supertest": "^3.4.2",
+    "tcp-ping": "^0.1.1"
+  }
+}
